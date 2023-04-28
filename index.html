@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everthing is Figureoutable</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        115.7deg,
+        rgb(3, 79, 135) 6.2%,
+        rgb(0, 184, 214) 112.9%
+      );
+    }
+    h1 {
+      text-align: center;
+      color: black;
+      font-family: "Courier New", Courier, monospace;
+      border-radius: 4px;
+      border: 1px solid black;
+      padding: 15px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      color: black;
+      font-family: "Courier New", Courier, monospace;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      max-width: 100%;
+      box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
+    }
+    p {
+      line-height: 1.5;
+      color: black;
+      font-size: 16px;
+      font-family: "Courier New", Courier, monospace;
+      margin: 20px 0px 10px;
+    }
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: justify;
+      padding: 30px 60px;
+      border: auto;
+      border-radius: 10px;
+      background: white;
+    }
+    .learn-more {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+      font-family: "Courier New", Courier, monospace;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+      color: #4eb6d9;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #eadc21;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+      transition: all 250ms ease-in-out;
+    }
+    button:hover {
+      background: linear-gradient(
+        115.7deg,
+        rgb(3, 79, 135) 6.2%,
+        rgb(0, 184, 214) 112.9%
+      );
+      color: white;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      color: black;
+      font-size: 12px;
+    }
+    .contact-details {
+ text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      color: black;
+      font-size: 12px;
+    }
+    .email {
+      color: black;
+    }
+    .email:hover {
+      color: #4eb6d9;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>Everything is Figureoutable</h1>
+      <h2>A MANTRA TO LIVE BY</h2>
+      <hr />
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/960/original/Everything_Book_Cover.jpg?1670841359
+    "
+        alt="Everything is Figureoutable"
+      />
+      <br />
+      <hr />
+      <p>
+        I have been at a crossroads lately, which has forced me to think about
+        my life and the paths I have taken. As a mother of 3, I found myself
+        lost in the mom role and wanting more. I came across this book
+        <b><em>Everyting is Figureoutable</em></b> by Marie Forleo through my
+        career coach. And from the moment I picked up this book, I find that I
+        am more energetic, more alive, and more equipped to take on the world
+        outside of motherhood. I encourage anyone looking for a change, whether
+        it be in a career, in a relationship, in life to read this book and
+        experience what is feels like to see that everything has a solution and
+        to simply have a more positive outlook.
+      </p>
+      <a
+        href="https://www.marieforleo.com/blog/everything-is-figureoutable-paperback"
+        target="_blank"
+        class="learn-more"
+      >
+        Click here to learn more about the "Everthing is Figureoutable"
+        philosophy.
+      </a>
+      <p>
+        If you would like to join me on this journey as well, click on the
+        button below to receive details via email.
+      </p>
+      <button class="connect-button">Join me on this journey</button>
+      <p class="footer">
+        This page was built by Ghada Odeh.
+        <div class="contact-details">
+      <span class="email"><b>Email:</b> </span><span><a href="mailto:godeh2016@gmail.com">godeh2016@gmail.com</a></span
+      ><span class="linkedIn"> <b>LinkedIn:</b> </span><span><a href="https://www.linkedin.com/in/ghada-odeh" target="blank">Ghada Odeh</a></span>
+      </p>
+    </div>
+  </body>
+  <script>
+    function connect() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email address?");
+      let interest = prompt(
+        "Are you interested in learning more? Type yes or no below."
+      );
+      if (interest === "yes") {
+        alert(
+          "Thank you " +
+            name +
+            "! I will send you details to the provided email soon."
+        );
+      } else {
+        interest === "no";
+        {
+          alert(
+            "Sorry to hear that " +
+              name +
+              ". Let me know if you change your mind."
+          );
+        }
+      }
+    }
+    let connectButton = document.querySelector(".connect-button");
+    connectButton.addEventListener("click", connect);
+  </script>
+</html>
